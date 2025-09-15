@@ -1,0 +1,28 @@
+.navbar {
+    width: 100%;
+    background-color: white;
+}
+li{
+    list-style: none;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: #CC0033;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:180px;
+    margin-right: 90px;
+    margin-bottom: 30px;
+}
+.active-link{
+    color:#003366;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+   
+}
