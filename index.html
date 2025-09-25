@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/CSS/Home.css">
 </head>
 <body>
- <nav class="navbar navbar-expand-lg bg-body-white">
+ <nav class="navbar navbar-expand-lg bg-body-white pe-4">
   <div class="container-fluid">
     <a class="navbar-brand" href="#"> 
       <img src="/Assets/pulse_logo__2_-removebg-preview.png" alt="Bootstrap" width="100px" height="100px">
@@ -16,45 +16,255 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-     <div class="collapse navbar-collapse" id="navbar-link">
-      <ul class="navbar-nav gap-4 ms-auto mb-2 mb-lg-0 ">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+<div class="collapse navbar-collapse " id="navbar-link">
+      <ul class="navbar-nav gap-4 ms-auto mb-2 mb-lg-0">
+        <li class="nav-item ">
+          <a class="nav-link active fw-bold " aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link fw-bold" href="#">Posts</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Posts</a>
+          <a class="nav-link fw-bold" href="#">Blogs</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Blogs</a>
+          <a class="nav-link fw-bold" href="#">Profile</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Profile</a>
+        <li class="nav-item ">
+          <a class="nav-link fw-bold" href="#">Sign Up</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Sign Up</a>
-        </li> 
       </ul>
     </div>
   </div>
 </nav>
 
-<div class="container-fluid hero-section py-5 px-3">
+<div class="container-fluid hero-section py-5 px-3 rounded-4 mb-2">
     <div class="row align-items-center">
       
-  <div class=" col-lg-6 col-md-6 col-sm-12 hero-text ps-lg-5">
-     <h2>Welcome To Pulse</h2>
-  <p>Your Real-Time Window to Lifesaving Blood Donation,<br>Events, and Advancements. Stay Informed on Every<br> Donation,Impact, and Medical Breakthrough.</p>
-  <div class="buttons">
-<button class="btn1">Make a request</button>
-<button class="btn2">Donate Now</button>
+  <div class=" col-lg-6 col-md-6 col-sm-12 hero-text ps-lg-5 text-center text-lg-start">
+     <h2 class="text-white fs-1 mb-2 fw-bold ">Welcome To Pulse</h2>
+  <p class="text-white fw-light fs-5 mb-2">Your Real-Time Window to Lifesaving Blood Donation,<br>Events, and Advancements. Stay Informed on Every<br> Donation,Impact, and Medical Breakthrough.</p>
+  <div class="buttons mt-4 gap-4 ">
+<button class="btn1 fw-bold rounded-3 border-0 p-2 px-3">Make a request</button>
+<button class="btn2 fw-bold rounded-3 border-0 p-2 px-3">Donate Now</button>
   </div>
   </div>
    
 <div class="col-lg-6 col-md-6 col-sm-12 hero-image text-center">
-  <img src="/Assets/xco2_8jtl_220606-removebg-preview.png" alt="Donation image" class="img-fluid" >
+  <img src="/Assets/xco2_8jtl_220606-removebg-preview.png" alt="Donation image" class="img-fluid m-auto"width="60%" >
   </div>
   </div>
 </div>
+<p class="text-start ms-3 fw-bold fs-4" style="color:#003366;">Recent Donors</p>
+<div class="container-fluid card-section py-2 px-3">
+  <div class="row g-4"> <!-- g-4 adds equal spacing between columns -->
+
+    <!-- Card 1 -->
+    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
+      <div class="card rounded-3 h-100" style="border-color:#CC0033; width: 20rem;">
+        <div class="card-body text-center">
+          <img src="/Assets/portrait-young-woman-smiling-isolated.jpg"
+               class="rounded-circle mb-3" width="180" height="180" alt="Donor">
+          <p class="card-text fs-5 text-start" style="font-family:'Times New Roman', Times, serif;">
+            Name: Lena Keziah <br>
+            Location: Buea, Cameroon <br>
+            Bloodtype: A+ <br>
+            Role: Donor
+          </p>
+        </div>
+        <a href="#"
+           class="w-100 fw-bold text-center fs-5 rounded-bottom-3"
+           style="color:black; border:1px solid #CC0033; text-decoration:none;">
+          View Profile <span class="ms-1">&rsaquo;</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
+      <div class="card rounded-3 h-100" style="border-color:#CC0033; width: 20rem;">
+        <div class="card-body text-center">
+          <img src="/Assets/casual-woman-white-jacket-chic-smart.jpg"
+               class="rounded-circle mb-3" width="180" height="180" alt="Donor">
+          <p class="card-text fs-5 text-start" style="font-family:'Times New Roman', Times, serif;">
+            Name: Mary Anne <br>
+            Location: Limbe, Cameroon <br>
+            Bloodtype: AB- <br>
+            Role: Donor
+          </p>
+        </div>
+        <a href="#"
+           class="w-100 fw-bold text-center fs-5 rounded-bottom-3"
+           style="color:black; border:1px solid #CC0033; text-decoration:none;">
+          View Profile <span class="ms-1">&rsaquo;</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
+      <div class="card rounded-3 h-100" style="border-color:#CC0033; width: 20rem;">
+        <div class="card-body text-center">
+          <img src="/Assets/day-walk-person-male-success-using.jpg"
+               class="rounded-circle mb-3" width="180" height="180" alt="Donor">
+          <p class="card-text fs-5 text-start" style="font-family:'Times New Roman', Times, serif;">
+            Name: Taku Lesly <br>
+            Location: Douala, Cameroon <br>
+            Bloodtype: O+ <br>
+            Role: Donor
+          </p>
+        </div>
+        <a href="#"
+           class="w-100 fw-bold text-center fs-5 rounded-bottom-3"
+           style="color:black; border:1px solid #CC0033; text-decoration:none;">
+          View Profile <span class="ms-1">&rsaquo;</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
+      <div class="card rounded-3 h-100" style="border-color:#CC0033; width: 20rem;">
+        <div class="card-body text-center">
+          <img src="/Assets/close-up-beautiful-african-woman-portrait.jpg"
+               class="rounded-circle mb-3" width="180" height="180" alt="Donor">
+          <p class="card-text fs-5 text-start" style="font-family:'Times New Roman', Times, serif;">
+            Name: Ayuk Brenda <br>
+            Location: Yaounde, Cameroon <br>
+            Bloodtype: B+ <br>
+            Role: Donor
+          </p>
+        </div>
+        <a href="#"
+           class="w-100 fw-bold text-center fs-5 rounded-bottom-3"
+           style="color:black; border:1px solid #CC0033; text-decoration:none;">
+          View Profile <span class="ms-1">&rsaquo;</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- After the cards row -->
+<div class="d-flex justify-content-end mt-3 mb-2 pe-3">
+  <button class="btn 3 fw-bold rounded-3 border-0 p-2 px-3 text-white" style="background-color:#003366">
+    See More <span class="ms-1">&rsaquo;</span>
+  </button>
+</div>
+
+<p class="text-start ms-3 fw-bold fs-4" style="color:#003366;">Recent Recipients</p>
+<div class="container-fluid card-section py-2 px-3">
+  <div class="row g-4"> <!-- g-4 adds equal spacing between columns -->
+
+    <!-- Card 1 -->
+    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
+      <div class="card rounded-3 h-100" style="border-color:#CC0033; width: 20rem;">
+        <div class="card-body text-center">
+       <img src="/Assets/sick man.jpg"
+     class="mb-3 d-block mx-auto"
+     style="width:100%; height:auto; margin-top:-5px;"
+     alt="Donor">
+
+          <p class="card-text fs-5 text-start" style="font-family:'Times New Roman', Times, serif;">
+            Name: Lena Keziah <br>
+            Location: Buea, Cameroon <br>
+            Bloodtype: A+ <br>
+            Role: Donor
+            Description:<br>
+            Urgently need O+ blood for my father who is undergoing surgery tomorrow. Any help ...
+          </p>
+        </div>
+  <a href="#"
+           class="w-100 fw-bold text-center fs-5 rounded-bottom-3"
+           style="color:black; border:1px solid #CC0033; text-decoration:none;">
+          View Profile <span class="ms-1 fs-4 mt-5" >&rsaquo;</span>
+        </a>
+
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
+      <div class="card rounded-3 h-100" style="border-color:#CC0033; width: 20rem;">
+        <div class="card-body text-center">
+        <img src="/Assets/sick girl.jpg"
+     class="mb-3 d-block mx-auto"
+     style="width:100%; height:165; margin-top:-5px;"
+     alt="Donor">
+          <p class="card-text fs-5 text-start" style="font-family:'Times New Roman', Times, serif;">
+            Name: Mary Anne <br>
+            Location: Limbe, Cameroon <br>
+            Bloodtype: AB- <br>
+            Role: Donor
+               Description:<br>
+      Looking for O+ blood for my sister who is in critical condition after an accident. Your help ...
+          </p>
+        </div>
+        <a href="#"
+           class="w-100 fw-bold text-center fs-5 rounded-bottom-3"
+           style="color:black; border:1px solid #CC0033; text-decoration:none;">
+          View Profile <span class="ms-1">&rsaquo;</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
+      <div class="card rounded-3 h-100" style="border-color:#CC0033; width: 20rem;">
+        <div class="card-body text-center">
+          <img src="/Assets/sick woman.jpg"
+     class="mb-3 d-block mx-auto"
+     style="width:100%; height:165; margin-top:-5px;"
+     alt="Donor">
+          <p class="card-text fs-5 text-start" style="font-family:'Times New Roman', Times, serif;">
+            Name: Taku Lesly <br>
+            Location: Douala, Cameroon <br>
+            Bloodtype: O+ <br>
+            Role: Donor
+          Urgently seeking A+ blood for my mother who is hospitalized and in need...
+          </p>
+        </div>
+        <a href="#"
+           class="w-100 fw-bold text-center fs-5 rounded-bottom-3"
+           style="color:black; border:1px solid #CC0033; text-decoration:none;">
+          View Profile <span class="ms-1">&rsaquo;</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
+      <div class="card rounded-3 h-100" style="border-color:#CC0033; width: 20rem;">
+        <div class="card-body text-center">
+             <img src="/Assets/portrait-patient-having-checkup.jpg"
+     class="mb-3 d-block mx-auto"
+     style="width:100%; height:165; margin-top:-5px;"
+     alt="Donor">
+          <p class="card-text fs-5 text-start" style="font-family:'Times New Roman', Times, serif;">
+            Name: Ayuk Brenda <br>
+            Location: Yaounde, Cameroon <br>
+            Bloodtype: B+ <br>
+            Role: Donor
+            Description:<br>
+            Urgent blood needed for a sick child. Your donation could save a young life. Please help.
+          </p>
+        </div>
+        <a href="#"
+           class="w-100 fw-bold text-center fs-5 rounded-bottom-3"
+           style="color:black; border:1px solid #CC0033; text-decoration:none;">
+          View Profile <span class="ms-1">&rsaquo;</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
+<div class="d-flex justify-content-end mt-3 mb-3 pe-3">
+  <button class="btn 3 fw-bold rounded-3 border-0 p-2 px-3 text-white" style="background-color:#003366">
+    See More <span class="ms-1">&rsaquo;</span>
+  </button>
+</div>
+
 
 <script defer src="/JAVA SCRIPT/bootstrap.bundle.min.js"></script>
 </body>
