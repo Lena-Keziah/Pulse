@@ -3,23 +3,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pulse</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="/CSS/bootstrap.min.css">
     <link rel="stylesheet" href="/CSS/Home.css">
 </head>
 <body>
- <nav class="navbar navbar-expand-lg bg-body-white pe-4">
+ <nav class="navbar navbar-expand-lg bg-body-white ">
   <div class="container-fluid">
     <a class="navbar-brand" href="#"> 
-      <img src="/Assets/pulse_logo__2_-removebg-preview.png" alt="Bootstrap" width="100px" height="100px">
+      <img src="/Assets/pulse_logo__2_-removebg-preview.png"class="img-fluid mt-3 pe-1" alt="Bootstrap" width="100px" height="100px">
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-link" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbar-link" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon "></span>
     </button>
 
 <div class="collapse navbar-collapse " id="navbar-link">
-      <ul class="navbar-nav gap-4 ms-auto mb-2 mb-lg-0">
+      <ul class="navbar-nav gap-4 ms-auto mb-2 mb-lg-0 ps-5">
         <li class="nav-item ">
-          <a class="nav-link active fw-bold " aria-current="page" href="#">Home</a>
+          <a class="nav-link active fw-bold" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item ">
           <a class="nav-link fw-bold" href="#">Posts</a>
@@ -265,8 +266,98 @@
     See More <span class="ms-1">&rsaquo;</span>
   </button>
 </div>
+ <p class="text-start ms-3 fw-bold fs-4" style="color:#003366;">How do we operate?</p>
+<div class="container my-5">
+  <div class="container">
+    <!-- First two cards side by side -->
+    <div class="row gx-lg-5 gx-3 gy-4 justify-content-between px-3 mt-3">
+      <!-- Step 1 -->
+      <div class="col-lg-5 col-md-6 col-sm-12 d-flex justify-content-center mb-5">
+        <div class="position-relative w-100">
+          <!-- Circle -->
+          <div class="rounded-circle text-white d-flex align-items-center justify-content-center fw-bold position-absolute"
+               style="width: 40px; height: 40px; top: -45px; right: 5px; background-color: #003366;">
+            1
+          </div>
+          <!-- Card -->
+          <div class="card border-danger rounded-3 p-4 h-100">
+            <p class="mb-0 text-start fs-5">
+              Create an account with your required details. This is entirely for security reasons.
+            </p>
+          </div>
+        </div>
+      </div>
 
+      <!-- Step 2 -->
+      <div class="col-lg-5 col-md-6 col-sm-12 d-flex justify-content-center mb-5">
+        <div class="position-relative w-100">
+          <!-- Circle -->
+          <div class="rounded-circle text-white d-flex align-items-center justify-content-center fw-bold position-absolute"
+               style="width: 40px; height: 40px; top: -45px; right: 5px; background-color: #003366;">
+            2
+          </div>
+          <!-- Card -->
+          <div class="card border-danger rounded-3 p-4 h-100">
+            <p class="mb-0 text-start fs-5">
+              Post an ad with your name, location and blood group. In the post, state clearly if you are a donor or recipient.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <!-- Third card centered -->
+    <div class="row justify-content-center px-3 mt-3">
+      <!-- Step 3 -->
+      <div class="col-lg-5 col-md-6 col-sm-12 d-flex justify-content-center mb-5">
+        <div class="position-relative w-100">
+          <!-- Circle -->
+          <div class="rounded-circle text-white d-flex align-items-center justify-content-center fw-bold position-absolute"
+               style="width: 40px; height: 40px; top: -45px; right: 5px; background-color: #003366;">
+            3
+          </div>
+          <!-- Card -->
+          <div class="card border-danger rounded-3 p-4 h-100">
+            <p class="mb-0 text-start fs-5">
+              Anyone interested in your post will reach out to you to call or chat.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <p class="text-start ms-3 fw-bold fs-5" style="color:#003366;">Am I eligible to donate blood?</p>
+  <p class="fs-5 ms-3">Are you eligible for blood donation? Find out about the eligibility
+requirements to donate blood today. Learn about general health,
+travel, medications, tattoos, and more.</p>
+<div class="d-flex justify-content-end mt-3 mb-3 pe-3">
+  <button class="btn 3 fw-bold rounded-3 border-0 p-2 px-3 text-white" style="background-color:#CC0033">
+    Learn more about eligibility
+  </button>
+</div>
 <script defer src="/JAVA SCRIPT/bootstrap.bundle.min.js"></script>
 </body>
+<footer>
+ <div class="container d-flex justify-content-between flex-wrap ">
+    
+    <!-- Left side: Contact links -->
+    <p class="text-white mb-0 ms-1">Contact Us. About Us. Terms of Use</p>
+    
+    <!-- Right side: Follow Us -->
+    <div class="d-flex flex-column align-items-end">
+      <!-- Follow Us text on same line as paragraph -->
+      <p class="text-white mb-2 ">Follow Us</p>
+      
+      <!-- Social Media Icons below -->
+      <div class="d-flex gap-3">
+        <a href="#" class="fs-4" style="color:#1877F2;"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="fs-4" style="color:#000000;"><i class="fab fa-tiktok"></i></a>
+        <a href="#" class="fs-4" style="color:#1DA1F2;"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+
+  </div>
+  <p class="text-center text-white">&copy;Pulse. All Rights Reserved</p>
+</footer>
 </html>
