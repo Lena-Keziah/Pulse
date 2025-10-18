@@ -1,0 +1,402 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="/CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="/Css/Post.css">
+</head>
+<body>
+    <body>
+ <nav class="navbar navbar-expand-lg bg-body-white ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"> 
+      <img src="/Assets/pulse_logo__2_-removebg-preview.png"class="img-fluid mt-3 pe-1" alt="Bootstrap" width="100px" height="100px">
+    </a>
+    <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbar-link" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon "></span>
+    </button>
+
+<div class="collapse navbar-collapse " id="navbar-link">
+      <ul class="navbar-nav gap-4 ms-auto mb-2 mb-lg-0 ps-4">
+        <li class="nav-item ">
+          <a class="nav-link  fw-bold" aria-current="page" href="/index.html">Home</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link active fw-bold" href="#">Posts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-bold" href="/Html/Blog.html">Blogs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-bold" href="#">Profile</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link fw-bold" href="#">Sign Up</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<h2 class="text-center">Find willing donors closest to your location</h2>
+<div class="drops d-flex justify-content-center gap-4">
+  <div class="container my-3">
+  <div class="d-flex justify-content-center align-items-start gap-4 flex-nowrap">
+
+    <!-- First dropdown -->
+    <div class="mb-3 position-relative" style="width: 250px;">
+      <label class="form-label">Location</label>
+
+      <div class="position-relative dropdown">
+        <!-- Location icon -->
+        <span class="position-absolute top-50 start-0 translate-middle-y ms-2">
+          <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="location" width="18">
+        </span>
+
+        <!-- Input -->
+        <input
+          type="text"
+          class="form-control rounded ps-5 pe-5"
+          placeholder="Type to search..."
+          id="dropdownInput1"
+          readonly
+        >
+
+        <!-- Chevron -->
+        <span
+          class="position-absolute top-50 end-0 translate-middle-y me-2"
+          data-bs-toggle="dropdown"
+          role="button"
+          aria-expanded="false"
+          style="cursor: pointer; font-size: 1.3rem;"
+        >
+          &#9662;
+        </span>
+
+        <!-- Dropdown -->
+        <ul class="dropdown-menu w-100" aria-labelledby="dropdownInput1">
+          <li><a class="dropdown-item" href="#">San Francisco</a></li>
+          <li><a class="dropdown-item" href="#">New York</a></li>
+          <li><a class="dropdown-item" href="#">Seattle</a></li>
+          <li><a class="dropdown-item" href="#">Los Angeles</a></li>
+          <li><a class="dropdown-item" href="#">Chicago</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Second dropdown -->
+    <div class="mb-3 position-relative" style="width: 250px;">
+      <label class="form-label">Location</label>
+
+      <div class="position-relative dropdown">
+        <!-- Location icon -->
+        <span class="position-absolute top-50 start-0 translate-middle-y ms-2">
+          <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="location" width="18">
+        </span>
+
+        <!-- Input -->
+        <input
+          type="text"
+          class="form-control rounded ps-5 pe-5"
+          placeholder="Type to search..."
+          id="dropdownInput2"
+          readonly
+        >
+
+        <!-- Chevron -->
+        <span
+          class="position-absolute top-50 end-0 translate-middle-y me-2"
+          data-bs-toggle="dropdown"
+          role="button"
+          aria-expanded="false"
+          style="cursor: pointer; font-size: 1.3rem;"
+        >
+          &#9662;
+        </span>
+
+        <!-- Dropdown -->
+        <ul class="dropdown-menu w-100" aria-labelledby="dropdownInput2">
+          <li><a class="dropdown-item" href="#">San Francisco</a></li>
+          <li><a class="dropdown-item" href="#">New York</a></li>
+          <li><a class="dropdown-item" href="#">Seattle</a></li>
+          <li><a class="dropdown-item" href="#">Los Angeles</a></li>
+          <li><a class="dropdown-item" href="#">Chicago</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</div>
+<div class="container-fluid card-section py-2 px-3 rounded-top-3">
+  <div class="row g-4"> <!-- g-4 adds equal spacing between columns -->
+
+    <!-- Card 1 -->
+    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
+      <div class="card rounded-3 h-100" style="border-color:#CC0033; width: 20rem;">
+        <div class="card-body text-center">
+          <img src="/Assets/portrait-young-woman-smiling-isolated.jpg"
+               class="rounded-circle mb-3" width="180" height="180" alt="Donor">
+          <p class="card-text fs-5 text-start" style="font-family:'Times New Roman', Times, serif;">
+            Name: Lena Keziah <br>
+            Location: Buea, Cameroon <br>
+            Bloodtype: A+ <br>
+            Role: Donor
+          </p>
+        </div>
+        <a href="#"
+           class="w-100 fw-bold text-center fs-5 rounded-bottom-3"
+           style="color:#CC0033; border:1px solid #CC0033; text-decoration:none;">
+          View Profile <span class="ms-1">&rsaquo;</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
+      <div class="card rounded-3 h-100" style="border-color:#CC0033; width: 20rem;">
+        <div class="card-body text-center">
+          <img src="/Assets/casual-woman-white-jacket-chic-smart.jpg"
+               class="rounded-circle mb-3" width="180" height="180" alt="Donor">
+          <p class="card-text fs-5 text-start" style="font-family:'Times New Roman', Times, serif;">
+            Name: Mary Anne <br>
+            Location: Limbe, Cameroon <br>
+            Bloodtype: AB- <br>
+            Role: Donor
+          </p>
+        </div>
+        <a href="#"
+           class="w-100 fw-bold text-center fs-5 rounded-bottom-3"
+           style="color:#CC0033; border:1px solid #CC0033; text-decoration:none;">
+          View Profile <span class="ms-1">&rsaquo;</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
+      <div class="card rounded-3 h-100" style="border-color:#CC0033; width: 20rem;">
+        <div class="card-body text-center">
+          <img src="/Assets/day-walk-person-male-success-using.jpg"
+               class="rounded-circle mb-3" width="180" height="180" alt="Donor">
+          <p class="card-text fs-5 text-start" style="font-family:'Times New Roman', Times, serif;">
+            Name: Taku Lesly <br>
+            Location: Douala, Cameroon <br>
+            Bloodtype: O+ <br>
+            Role: Donor
+          </p>
+        </div>
+        <a href="#"
+           class="w-100 fw-bold text-center fs-5 rounded-bottom-3"
+           style="color:#CC0033; border:1px solid #CC0033; text-decoration:none;">
+          View Profile <span class="ms-1">&rsaquo;</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
+      <div class="card rounded-3 h-100" style="border-color:#CC0033; width: 20rem;">
+        <div class="card-body text-center">
+          <img src="/Assets/close-up-beautiful-african-woman-portrait.jpg"
+               class="rounded-circle mb-3" width="180" height="180" alt="Donor">
+          <p class="card-text fs-5 text-start" style="font-family:'Times New Roman', Times, serif;">
+            Name: Ayuk Brenda <br>
+            Location: Yaounde, Cameroon <br>
+            Bloodtype: B+ <br>
+            Role: Donor
+          </p>
+        </div>
+        <a href="#"
+           class="w-100 fw-bold text-center fs-5 rounded-bottom-3"
+           style="color:#CC0033; border:1px solid #CC0033; text-decoration:none;">
+          View Profile <span class="ms-1">&rsaquo;</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
+<div class="container-fluid card-section py-2 px-3">
+  <div class="row g-4"> <!-- g-4 adds equal spacing between columns -->
+
+    <!-- Card 1 -->
+    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
+      <div class="card rounded-3 h-100" style="border-color:#CC0033; width: 20rem;">
+        <div class="card-body text-center">
+          <img src="/Assets/portrait-young-woman-smiling-isolated.jpg"
+               class="rounded-circle mb-3" width="180" height="180" alt="Donor">
+          <p class="card-text fs-5 text-start" style="font-family:'Times New Roman', Times, serif;">
+            Name: Lena Keziah <br>
+            Location: Buea, Cameroon <br>
+            Bloodtype: A+ <br>
+            Role: Donor
+          </p>
+        </div>
+        <a href="#"
+           class="w-100 fw-bold text-center fs-5 rounded-bottom-3"
+           style="color:#CC0033; border:1px solid #CC0033; text-decoration:none;">
+          View Profile <span class="ms-1">&rsaquo;</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
+      <div class="card rounded-3 h-100" style="border-color:#CC0033; width: 20rem;">
+        <div class="card-body text-center">
+          <img src="/Assets/casual-woman-white-jacket-chic-smart.jpg"
+               class="rounded-circle mb-3" width="180" height="180" alt="Donor">
+          <p class="card-text fs-5 text-start" style="font-family:'Times New Roman', Times, serif;">
+            Name: Mary Anne <br>
+            Location: Limbe, Cameroon <br>
+            Bloodtype: AB- <br>
+            Role: Donor
+          </p>
+        </div>
+        <a href="#"
+           class="w-100 fw-bold text-center fs-5 rounded-bottom-3"
+           style="color:#CC0033; border:1px solid #CC0033; text-decoration:none;">
+          View Profile <span class="ms-1">&rsaquo;</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
+      <div class="card rounded-3 h-100" style="border-color:#CC0033; width: 20rem;">
+        <div class="card-body text-center">
+          <img src="/Assets/day-walk-person-male-success-using.jpg"
+               class="rounded-circle mb-3" width="180" height="180" alt="Donor">
+          <p class="card-text fs-5 text-start" style="font-family:'Times New Roman', Times, serif;">
+            Name: Taku Lesly <br>
+            Location: Douala, Cameroon <br>
+            Bloodtype: O+ <br>
+            Role: Donor
+          </p>
+        </div>
+        <a href="#"
+           class="w-100 fw-bold text-center fs-5 rounded-bottom-3"
+           style="color:#CC0033; border:1px solid #CC0033; text-decoration:none;">
+          View Profile <span class="ms-1">&rsaquo;</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
+      <div class="card rounded-3 h-100" style="border-color:#CC0033; width: 20rem;">
+        <div class="card-body text-center">
+          <img src="/Assets/close-up-beautiful-african-woman-portrait.jpg"
+               class="rounded-circle mb-3" width="180" height="180" alt="Donor">
+          <p class="card-text fs-5 text-start" style="font-family:'Times New Roman', Times, serif;">
+            Name: Ayuk Brenda <br>
+            Location: Yaounde, Cameroon <br>
+            Bloodtype: B+ <br>
+            Role: Donor
+          </p>
+        </div>
+        <a href="#"
+           class="w-100 fw-bold text-center fs-5 rounded-bottom-3"
+           style="color:#CC0033; border:1px solid #CC0033; text-decoration:none;">
+          View Profile <span class="ms-1">&rsaquo;</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
+<div class="container-fluid card-section py-2 px-3">
+  <div class="row g-4"> <!-- g-4 adds equal spacing between columns -->
+
+    <!-- Card 1 -->
+    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
+      <div class="card rounded-3 h-100" style="border-color:#CC0033; width: 20rem;">
+        <div class="card-body text-center">
+          <img src="/Assets/portrait-young-woman-smiling-isolated.jpg"
+               class="rounded-circle mb-3" width="180" height="180" alt="Donor">
+          <p class="card-text fs-5 text-start" style="font-family:'Times New Roman', Times, serif;">
+            Name: Lena Keziah <br>
+            Location: Buea, Cameroon <br>
+            Bloodtype: A+ <br>
+            Role: Donor
+          </p>
+        </div>
+        <a href="#"
+           class="w-100 fw-bold text-center fs-5 rounded-bottom-3"
+           style="color:#CC0033; border:1px solid #CC0033; text-decoration:none;">
+          View Profile <span class="ms-1">&rsaquo;</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
+      <div class="card rounded-3 h-100" style="border-color:#CC0033; width: 20rem;">
+        <div class="card-body text-center">
+          <img src="/Assets/casual-woman-white-jacket-chic-smart.jpg"
+               class="rounded-circle mb-3" width="180" height="180" alt="Donor">
+          <p class="card-text fs-5 text-start" style="font-family:'Times New Roman', Times, serif;">
+            Name: Mary Anne <br>
+            Location: Limbe, Cameroon <br>
+            Bloodtype: AB- <br>
+            Role: Donor
+          </p>
+        </div>
+        <a href="#"
+           class="w-100 fw-bold text-center fs-5 rounded-bottom-3"
+           style="color:#CC0033; border:1px solid #CC0033; text-decoration:none;">
+          View Profile <span class="ms-1">&rsaquo;</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
+      <div class="card rounded-3 h-100" style="border-color:#CC0033; width: 20rem;">
+        <div class="card-body text-center">
+          <img src="/Assets/day-walk-person-male-success-using.jpg"
+               class="rounded-circle mb-3" width="180" height="180" alt="Donor">
+          <p class="card-text fs-5 text-start" style="font-family:'Times New Roman', Times, serif;">
+            Name: Taku Lesly <br>
+            Location: Douala, Cameroon <br>
+            Bloodtype: O+ <br>
+            Role: Donor
+          </p>
+        </div>
+        <a href="#"
+           class="w-100 fw-bold text-center fs-5 rounded-bottom-3"
+           style="color:#CC0033; border:1px solid #CC0033; text-decoration:none;">
+          View Profile <span class="ms-1">&rsaquo;</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
+      <div class="card rounded-3 h-100" style="border-color:#CC0033; width: 20rem;">
+        <div class="card-body text-center">
+          <img src="/Assets/close-up-beautiful-african-woman-portrait.jpg"
+               class="rounded-circle mb-3" width="180" height="180" alt="Donor">
+          <p class="card-text fs-5 text-start" style="font-family:'Times New Roman', Times, serif;">
+            Name: Ayuk Brenda <br>
+            Location: Yaounde, Cameroon <br>
+            Bloodtype: B+ <br>
+            Role: Donor
+          </p>
+        </div>
+        <a href="#"
+           class="w-100 fw-bold text-center fs-5 rounded-bottom-3"
+           style="color:#CC0033; border:1px solid #CC0033; text-decoration:none;">
+          View Profile <span class="ms-1">&rsaquo;</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
+<script defer src="/JAVA SCRIPT/bootstrap.bundle.min.js"></script>
+</body>
+</html>

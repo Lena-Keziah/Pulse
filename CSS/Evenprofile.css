@@ -1,0 +1,21 @@
+.navbar-collapse.collapsing,
+.navbar-collapse.show {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: white;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.nav-link{
+    color:#CC0033;
+}
+.nav-item .nav-link.active {
+    color:#003366;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+.hero{
+background-color: #CC0033;
+}
