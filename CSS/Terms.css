@@ -6,7 +6,6 @@
     text-decoration: underline;
     text-underline-offset: 10px;
 }
-
 .navbar-collapse.collapsing,
 .navbar-collapse.show {
     position: absolute;
@@ -17,11 +16,8 @@
     z-index: 1000;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
-img{
-    object-fit: cover;
-}
-.card-section{
+.header{
     background-color: #CC0033;
+    color: white;
+    height: 150px;
 }
-.btn1 {
- background-color: #003366; color: white; }

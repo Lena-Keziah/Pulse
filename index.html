@@ -8,21 +8,24 @@
     <link rel="stylesheet" href="/CSS/Home.css">
 </head>
 <body>
- <nav class="navbar navbar-expand-lg bg-body-white ">
+  <nav class="navbar navbar-expand-lg bg-body-white px">
   <div class="container-fluid">
     <a class="navbar-brand" href="#"> 
-      <img src="/Assets/pulse_logo__2_-removebg-preview.png"class="img-fluid mt-3 pe-1" alt="Bootstrap" width="100px" height="100px">
+      <img src="/Assets/pulse_logo__2_-removebg-preview.png" 
+           class="img-fluid" alt="Pulse Logo" 
+           style="max-width:80px; height:auto;">
     </a>
-    <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbar-link" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon "></span>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-link" 
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
     </button>
 
-<div class="collapse navbar-collapse " id="navbar-link">
+    <div class="collapse navbar-collapse" id="navbar-link">
       <ul class="navbar-nav gap-4 ms-auto mb-2 mb-lg-0 ps-5">
-        <li class="nav-item ">
+        <li class="nav-item">
           <a class="nav-link active fw-bold" aria-current="page" href="#">Home</a>
         </li>
-        <li class="nav-item ">
+        <li class="nav-item">
           <a class="nav-link fw-bold" href="/Html/Post.html">Posts</a>
         </li>
         <li class="nav-item">
@@ -31,41 +34,144 @@
         <li class="nav-item">
           <a class="nav-link fw-bold" href="/Html/Even profile.html">Profile</a>
         </li>
-        <li class="nav-item ">
-          <a class="nav-link fw-bold" href="#">Sign Up</a>
+        <li class="nav-item">
+          <a class="nav-link fw-bold" href="#" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
+<!-- Signup Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content rounded-4 shadow p-3 p-sm-4 p-lg-3"> <!-- responsive padding -->
+      <div class="modal-body text-center">
 
-<div class="container-fluid hero-section py-5 px-3 rounded-4 mb-2">
-    <div class="row align-items-center">
-      
-  <div class=" col-lg-6 col-md-6 col-sm-12 hero-text ps-lg-5 text-center text-lg-start">
-     <h2 class="text-white fs-1 mb-2 fw-bold ">Welcome To Pulse</h2>
-  <p class="text-white fw-light fs-5 mb-2">Your Real-Time Window to Lifesaving Blood Donation,<br>Events, and Advancements. Stay Informed on Every<br> Donation,Impact, and Medical Breakthrough.</p>
-  <div class="buttons mt-4 gap-4 ">
-<button class="btn1 fw-bold rounded-3 border-0 p-2 px-3">Make a request</button>
-<button class="btn2 fw-bold rounded-3 border-0 p-2 px-3">Donate Now</button>
+        <!-- Logo -->
+        <img src="/Assets/pulse_logo__2_-removebg-preview.png" 
+             alt="Pulse Logo" 
+             class="mb-2" 
+             style="width:50px; max-width:25%; height:auto;"> <!-- smaller logo -->
+
+        <!-- App Name -->
+        <h4 class="mb-3">Pulse</h4>
+
+        <!-- Signup with Google -->
+        <button class="btn btn-outline-danger w-100 mb-3 d-flex align-items-center justify-content-center">
+          <i class="bi bi-google me-2"></i> Sign up with Google
+        </button>
+
+        <!-- OR separator -->
+        <div class="d-flex align-items-center my-3">
+          <hr class="flex-grow-1">
+          <span class="px-2">OR</span>
+          <hr class="flex-grow-1">
+        </div>
+
+        <!-- Email & Password form -->
+        <form>
+          <input type="email" class="form-control mb-2" placeholder="Email" required>
+          <input type="password" class="form-control mb-3" placeholder="Password" required>
+          <button type="submit" class="btn btn-primary w-100">Sign Up</button>
+        </form>
+
+        <!-- Login link -->
+        <p class="small mt-2">
+  Already have an account? 
+  <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
+</p>
+
+      </div>
+    </div>
   </div>
+</div><!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-md"> <!-- Removed modal-dialog-scrollable -->
+    <div class="modal-content rounded-4 shadow p-4"> <!-- Slightly more padding -->
+
+      <div class="modal-body text-center">
+
+        <!-- Logo -->
+        <img src="/Assets/pulse_logo__2_-removebg-preview.png" 
+             alt="Pulse Logo" 
+             class="mb-3" 
+             style="width:60px; max-width:25%; height:auto;">
+
+        <!-- App Name -->
+        <h4 class="mb-4">Pulse Login</h4>
+
+        <!-- Login with Google -->
+        <button class="btn btn-outline-danger w-100 mb-4 d-flex align-items-center justify-content-center">
+          <i class="bi bi-google me-2"></i> Login with Google
+        </button>
+
+        <!-- OR separator -->
+        <div class="d-flex align-items-center my-3">
+          <hr class="flex-grow-1">
+          <span class="px-2">OR</span>
+          <hr class="flex-grow-1">
+        </div>
+
+        <!-- Email & Password form -->
+        <form>
+          <div class="mb-3 text-start">
+            <label for="loginEmail" class="form-label">Email</label>
+            <input type="email" class="form-control" id="loginEmail" placeholder="you@example.com" required>
+          </div>
+          <div class="mb-3 text-start">
+            <label for="loginPassword" class="form-label">Password</label>
+            <input type="password" class="form-control" id="loginPassword" placeholder="Password" required>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Login</button>
+        </form>
+
+        <!-- Forgot password link -->
+        <p class="small mt-3">Forgot your password? <a href="#">Reset</a></p>
+        <p class="small mt-1">Don't have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</a></p>
+
+      </div>
+    </div>
   </div>
-   
-<div class="col-lg-6 col-md-6 col-sm-12 hero-image text-center">
-  <img src="/Assets/xco2_8jtl_220606-removebg-preview.png" alt="Donation image" class="img-fluid m-auto"width="60%" >
-  </div>
+</div>
+
+<div class="container-fluid hero-section py-5 rounded-4 mb-2">
+  <div class="row align-items-center gx-3">
+    
+    <div class="col-lg-6 col-md-6 col-sm-12 hero-text text-center text-lg-start px-3">
+      <h2 class="text-white fs-1 mb-2 fw-bold ms-5">Welcome To Pulse</h2>
+      <p class="text-white fw-light fs-5 mb-2 ms-5">
+        Your Real-Time Window to Lifesaving Blood Donation,<br>
+        Events, and Advancements. Stay Informed on Every<br>
+        Donation, Impact, and Medical Breakthrough.
+      </p>
+      <div class="buttons mt-4 d-flex gap-3 justify-content-center justify-content-lg-start">
+       <a href="/Html/post2.html" class="btn1 fw-bold rounded-3 border-0 p-2 px-3 ms-5 text-decoration-none">Make a request</a>
+
+        <a href="/Html/Post.html" class="btn2 fw-bold rounded-3 border-0 p-2 px-3 ">Donate Now</a>
+      </div>
+    </div>
+    
+    <div class="col-lg-6 col-md-6 col-sm-12 hero-image text-center px-3">
+      <img src="/Assets/xco2_8jtl_220606-removebg-preview.png" 
+           alt="Donation image" 
+           class="img-fluid" 
+           style="max-width: 70%; height: auto; margin: 0 auto;">
+    </div>
+
   </div>
 </div>
 <p class="text-start ms-3 fw-bold fs-4" style="color:#003366;">Recent Donors</p>
-<div class="container-fluid card-section py-2 px-3">
-  <div class="row g-4"> <!-- g-4 adds equal spacing between columns -->
+<div class="container-fluid card-section py-2">
+  <div class="row g-4">
 
     <!-- Card 1 -->
     <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
-      <div class="card rounded-3 h-100" style="border-color:#CC0033; width: 20rem;">
+      <div class="card rounded-3 h-100" style="border-color:#CC0033; width: 100%; max-width: 20rem;">
         <div class="card-body text-center">
           <img src="/Assets/portrait-young-woman-smiling-isolated.jpg"
-               class="rounded-circle mb-3" width="180" height="180" alt="Donor">
+               class="rounded-circle mb-3"
+               style="width:180px; height:180px; object-fit:cover;" 
+               alt="Donor">
           <p class="card-text fs-5 text-start" style="font-family:'Times New Roman', Times, serif;">
             Name: Lena Keziah <br>
             Location: Buea, Cameroon <br>
@@ -73,9 +179,9 @@
             Role: Donor
           </p>
         </div>
-        <a href="#"
+        <a href="/Html/Odd profile.html#profile1"
            class="w-100 fw-bold text-center fs-5 rounded-bottom-3"
-           style="color:black; border:1px solid #CC0033; text-decoration:none;">
+           style="color:#CC0033; border:1px solid #CC0033; text-decoration:none;">
           View Profile <span class="ms-1">&rsaquo;</span>
         </a>
       </div>
@@ -83,10 +189,12 @@
 
     <!-- Card 2 -->
     <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
-      <div class="card rounded-3 h-100" style="border-color:#CC0033; width: 20rem;">
+      <div class="card rounded-3 h-100" style="border-color:#CC0033; width: 100%; max-width: 20rem;">
         <div class="card-body text-center">
           <img src="/Assets/casual-woman-white-jacket-chic-smart.jpg"
-               class="rounded-circle mb-3" width="180" height="180" alt="Donor">
+               class="rounded-circle mb-3"
+               style="width:180px; height:180px; object-fit:cover;" 
+               alt="Donor">
           <p class="card-text fs-5 text-start" style="font-family:'Times New Roman', Times, serif;">
             Name: Mary Anne <br>
             Location: Limbe, Cameroon <br>
@@ -94,9 +202,9 @@
             Role: Donor
           </p>
         </div>
-        <a href="#"
+        <a href="/Html/Odd.profile.html #profile2"
            class="w-100 fw-bold text-center fs-5 rounded-bottom-3"
-           style="color:black; border:1px solid #CC0033; text-decoration:none;">
+           style="color:#CC0033; border:1px solid #CC0033; text-decoration:none;">
           View Profile <span class="ms-1">&rsaquo;</span>
         </a>
       </div>
@@ -104,10 +212,12 @@
 
     <!-- Card 3 -->
     <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
-      <div class="card rounded-3 h-100" style="border-color:#CC0033; width: 20rem;">
+      <div class="card rounded-3 h-100" style="border-color:#CC0033; width: 100%; max-width: 20rem;">
         <div class="card-body text-center">
           <img src="/Assets/day-walk-person-male-success-using.jpg"
-               class="rounded-circle mb-3" width="180" height="180" alt="Donor">
+               class="rounded-circle mb-3"
+               style="width:180px; height:180px; object-fit:cover;" 
+               alt="Donor">
           <p class="card-text fs-5 text-start" style="font-family:'Times New Roman', Times, serif;">
             Name: Taku Lesly <br>
             Location: Douala, Cameroon <br>
@@ -115,9 +225,9 @@
             Role: Donor
           </p>
         </div>
-        <a href="#"
+        <a href="/Html/Odd.profile.html"
            class="w-100 fw-bold text-center fs-5 rounded-bottom-3"
-           style="color:black; border:1px solid #CC0033; text-decoration:none;">
+           style="color:#CC0033; border:1px solid #CC0033; text-decoration:none;">
           View Profile <span class="ms-1">&rsaquo;</span>
         </a>
       </div>
@@ -125,35 +235,34 @@
 
     <!-- Card 4 -->
     <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
-      <div class="card rounded-3 h-100" style="border-color:#CC0033; width: 20rem;">
+      <div class="card rounded-3 h-100" style="border-color:#CC0033; width: 100%; max-width: 20rem;">
         <div class="card-body text-center">
-          <img src="/Assets/close-up-beautiful-african-woman-portrait.jpg"
-               class="rounded-circle mb-3" width="180" height="180" alt="Donor">
+          <img src="/Assets/day-walk-person-male-success-using.jpg"
+               class="rounded-circle mb-3"
+               style="width:180px; height:180px; object-fit:cover;" 
+               alt="Donor">
           <p class="card-text fs-5 text-start" style="font-family:'Times New Roman', Times, serif;">
-            Name: Ayuk Brenda <br>
-            Location: Yaounde, Cameroon <br>
-            Bloodtype: B+ <br>
+            Name: Taku Lesly <br>
+            Location: Douala, Cameroon <br>
+            Bloodtype: O+ <br>
             Role: Donor
           </p>
         </div>
-        <a href="#"
+        <a href="/Html/Odd.profile.html"
            class="w-100 fw-bold text-center fs-5 rounded-bottom-3"
-           style="color:black; border:1px solid #CC0033; text-decoration:none;">
+           style="color:#CC0033; border:1px solid #CC0033; text-decoration:none;">
           View Profile <span class="ms-1">&rsaquo;</span>
         </a>
       </div>
     </div>
 
   </div>
-</div>
-<div class="d-flex justify-content-center mt-3 mb-3">
-  <div style="width: 20rem; display: flex; justify-content: flex-end;">
-    <button class="btn fw-bold rounded-3 border-0 p-2 px-3 text-white" style="background-color:#003366">
-      See More <span class="ms-1">&rsaquo;</span>
-    </button>
+
+  
+  <div class="d-flex justify-content-end mt-3">
+    <a href="#"class="button rounded-3 border-0 p-2 px-3 text-white">See More<span class="ms-1">&rsaquo;</span></a>
   </div>
 </div>
-
 <p class="text-start ms-3 fw-bold fs-4" style="color:#003366;">Recent Recipients</p>
 <div class="container-fluid card-section py-2 px-3">
   <div class="row g-4"> <!-- g-4 adds equal spacing between columns -->
@@ -178,7 +287,7 @@
         </div>
   <a href="#"
            class="w-100 fw-bold text-center fs-5 rounded-bottom-3"
-           style="color:black; border:1px solid #CC0033; text-decoration:none;">
+           style="color:black; border:1px solid #CC0033; text-decoration:none;color: #CC0033;">
           View Profile <span class="ms-1 fs-4 mt-5" >&rsaquo;</span>
         </a>
 
@@ -204,7 +313,7 @@
         </div>
         <a href="#"
            class="w-100 fw-bold text-center fs-5 rounded-bottom-3"
-           style="color:black; border:1px solid #CC0033; text-decoration:none;">
+           style="color:black; border:1px solid #CC0033; text-decoration:none;color: #CC0033;">
           View Profile <span class="ms-1">&rsaquo;</span>
         </a>
       </div>
@@ -229,7 +338,7 @@
         </div>
         <a href="#"
            class="w-100 fw-bold text-center fs-5 rounded-bottom-3"
-           style="color:black; border:1px solid #CC0033; text-decoration:none;">
+           style="color:black; border:1px solid #CC0033; text-decoration:none;color: #CC0033;">
           View Profile <span class="ms-1">&rsaquo;</span>
         </a>
       </div>
@@ -249,12 +358,12 @@
             Bloodtype: B+ <br>
             Role: Donor
             Description:<br>
-            Urgent blood needed for a sick child. Your donation could save a young life. Please help.
+            Urgent blood needed for a sick child. Your donation could save a young life. Please help...
           </p>
         </div>
         <a href="#"
            class="w-100 fw-bold text-center fs-5 rounded-bottom-3"
-           style="color:black; border:1px solid #CC0033; text-decoration:none;">
+           style="color:black; border:1px solid #CC0033; text-decoration:none;color: #CC0033;">
           View Profile <span class="ms-1">&rsaquo;</span>
         </a>
       </div>
@@ -262,16 +371,12 @@
 
   </div>
 </div>
-<div class="d-flex justify-content-center mt-3 mb-3">
-  <div style="width: 20rem; display: flex; justify-content: flex-end;">
-    <button class="btn fw-bold rounded-3 border-0 p-2 px-3 text-white" style="background-color:#003366">
+<div class="d-flex justify-content-end mt-3" style="padding-right: 1rem;">
+    <button class="btn fw-bold rounded-3 border-0 p-2 px-3 text-white" 
+            style="background-color:#003366;">
       See More <span class="ms-1">&rsaquo;</span>
     </button>
   </div>
-</div>
-
-
-</div>
  <p class="text-start ms-3 fw-bold fs-4" style="color:#003366;">How do we operate?</p>
 <div class="container my-5">
   <div class="container">
@@ -313,7 +418,7 @@
     </div>
 
     <!-- Third card centered -->
-    <div class="row justify-content-center px-3 mt-3">
+    <div class="row justify-content-center  mt-3">
       <!-- Step 3 -->
       <div class="col-lg-5 col-md-6 col-sm-12 d-flex justify-content-center mb-5">
         <div class="position-relative w-100">
@@ -338,7 +443,7 @@
 requirements to donate blood today. Learn about general health,
 travel, medications, tattoos, and more.</p>
 <div class="d-flex justify-content-end mt-3 mb-3 pe-5">
-  <button class="btn 3 fw-bold rounded-3 border-0 p-2 px-3 text-white " style="background-color:#CC0033;"font-family="'Times New Roman', Times, serif;">
+  <button class="btn 3 fw-bold rounded-3 border-0 p-2 px-3 text-white" style="background-color:#CC0033;"font-family="'Times New Roman', Times, serif;">
     Learn more about eligibility
   </button>
 </div>
@@ -348,8 +453,11 @@ travel, medications, tattoos, and more.</p>
   <div class="container d-flex justify-content-between flex-wrap" style="padding-top: 15px; padding-bottom: 0;">
     
     <!-- Left side: Contact links -->
-    <p class="text-white mb-0 ms-1">Contact Us. About Us. Terms of Use</p>
-    
+     <div class="footerlinks fw-semi-bold">
+            <a class="text-white mb-0 ms-1" href="/Html/Contact us.html">Contact Us.</a>
+             <a class="text-white mb-0 ms-1" href="/Html/About us.html">About Us.</a>
+              <a class="text-white mb-0 ms-1" href="/Html/Terms of use.html">Terms of Use</a>
+     </div>
     <!-- Right side: Follow Us -->
     <div class="d-flex flex-column align-items-end">
       <!-- Follow Us text -->

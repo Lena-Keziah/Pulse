@@ -37,17 +37,10 @@
     z-index: 1000;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
-footer{
-  background-color: #CC0033;
+ 
+h4{
+  color: #003366;
 }
-p{
-  font-family: 'Times New Roman', Times, serif;
-}
-.button{
-  background-color: #003366;
-  text-decoration: none;
-  font-weight: bold;
-}
-a{
-  text-decoration: none;
+strong{
+  color: #003366;
 }
