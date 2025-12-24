@@ -8,3 +8,14 @@
 .form-control{
     border-color: #CC0033;
 }
+.btn1 {
+ background-color: #003366; color: white; }
+ img{
+    object-fit: cover;
+ }
+ ::placeholder{
+    font-style: italic;
+ }
+ p{
+    font-style: italic;
+ }

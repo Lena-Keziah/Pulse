@@ -30,7 +30,7 @@
           <a class="nav-link fw-bold" href="/Html/Blog.html">Blogs</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link fw-bold" href="#">Profile</a>
+          <a class="nav-link fw-bold" href="/Html/Even profile.html">Profile</a>
         </li>
         <li class="nav-item ">
           <a class="nav-link fw-bold" href="#">Sign Up</a>
@@ -39,99 +39,61 @@
     </div>
   </div>
 </nav>
+
 <h2 class="text-center">Find willing donors closest to your location</h2>
 <div class="drops d-flex justify-content-center gap-4">
   <div class="container my-3">
   <div class="d-flex justify-content-center align-items-start gap-4 flex-nowrap">
 
-    <!-- First dropdown -->
-    <div class="mb-3 position-relative" style="width: 250px;">
-      <label class="form-label">Location</label>
 
-      <div class="position-relative dropdown">
-        <!-- Location icon -->
-        <span class="position-absolute top-50 start-0 translate-middle-y ms-2">
-          <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="location" width="18">
-        </span>
 
-        <!-- Input -->
-        <input
-          type="text"
-          class="form-control rounded ps-5 pe-5"
-          placeholder="Type to search..."
-          id="dropdownInput1"
-          readonly
-        >
-
-        <!-- Chevron -->
-        <span
-          class="position-absolute top-50 end-0 translate-middle-y me-2"
-          data-bs-toggle="dropdown"
-          role="button"
-          aria-expanded="false"
-          style="cursor: pointer; font-size: 1.3rem;"
-        >
-          &#9662;
-        </span>
-
-        <!-- Dropdown -->
-        <ul class="dropdown-menu w-100" aria-labelledby="dropdownInput1">
-          <li><a class="dropdown-item" href="#">Far North</a></li>
-          <li><a class="dropdown-item" href="#">North</a></li>
-          <li><a class="dropdown-item" href="#">Centre</a></li>
-          <li><a class="dropdown-item" href="#">NorthWest</a></li>
-          <li><a class="dropdown-item" href="#">SouthWest</a></li>
-          <li><a class="dropdown-item" href="#">South</a></li>
-          <li><a class="dropdown-item" href="#">East</a></li>
-          <li><a class="dropdown-item" href="#">West</a></li>
-          <li><a class="dropdown-item" href="#">Littoral</a></li>
-          <li><a class="dropdown-item" href="#">Adamawa</a></li>
-        </ul>
-      </div>
+<div class="drops d-flex justify-content-center gap-4 my-4">
+<div class="d-flex gap-3 align-items-start">
+  <!-- Location select -->
+  <div class="mb-3" style="width: 250px;">
+    <label class="form-label">Location</label>
+    <div class="d-flex align-items-center rounded-3" style="border: 2px solid #003366;">
+      <!-- Left icon -->
+      <span class="ps-2 pe-2"><i class="fa-solid fa-location-dot"></i></span>
+      <!-- Select input -->
+      <select class="form-select border-0 rounded-0">
+        <option>Douala</option>
+        <option>Yaoundé</option>
+        <option>Buea</option>
+        <option>Bamenda</option>
+        <option>Ngoundere</option>
+        <option>Maroua</option>
+        <option>Garoua</option>
+        <option>Ebolowa</option>
+        <option>Bertoua</option>
+        <option>Bafoussam</option>
+      </select>
     </div>
-    
+  </div>
 
-    <!-- Second dropdown -->
-    <div class="mb-3 position-relative" style="width: 250px;">
-      <label class="form-label">Bloodtype</label>
+  <!-- Blood type select -->
+  <div class="mb-3" style="width: 250px;">
+    <label class="form-label">Blood Type</label>
+    <div class="d-flex align-items-center rounded-3" style="border: 2px solid #003366;">
+      <!-- Left icon -->
+      <span class="ps-2 pe-2"><i class="fa-solid fa-droplet" style="color:#CC0033;"></i></span>
+      <!-- Select input -->
+      <select class="form-select border-0 rounded-0">
+        <option>A+</option>
+        <option>A-</option>
+        <option>B+</option>
+        <option>B-</option>
+        <option>AB+</option>
+        <option>AB-</option>
+        <option>O+</option>
+        <option>O-</option>
+      </select>
+    </div>
+  </div>
+</div>
 
-      <div class="position-relative dropdown">
-        <!-- Location icon -->
-        <span class="position-absolute top-50 start-0 translate-middle-y ms-2">
-          <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="location" width="18">
-        </span>
 
-        <!-- Input -->
-        <input
-          type="text"
-          class="form-control rounded ps-5 pe-5"
-          placeholder="Type to search..."
-          id="dropdownInput2"
-          readonly
-        >
 
-        <!-- Chevron -->
-        <span
-          class="position-absolute top-50 end-0 translate-middle-y me-2"
-          data-bs-toggle="dropdown"
-          role="button"
-          aria-expanded="false"
-          style="cursor: pointer; font-size: 1.3rem;"
-        >
-          &#9662;
-        </span>
-
-        <!-- Dropdown -->
-        <ul class="dropdown-menu w-100" aria-labelledby="dropdownInput2">
-          <li><a class="dropdown-item" href="#">A+</a></li>
-          <li><a class="dropdown-item" href="#">A-</a></li>
-          <li><a class="dropdown-item" href="#">B+</a></li>
-          <li><a class="dropdown-item" href="#">B-</a></li>
-          <li><a class="dropdown-item" href="#">AB+</a></li>
-          <li><a class="dropdown-item" href="#">AB-</a></li>
-          <li><a class="dropdown-item" href="#">O+</a></li>
-          <li><a class="dropdown-item" href="#">O-</a></li>
-        </ul>
       </div>
     </div>
 
@@ -155,7 +117,7 @@
             Role: Donor
           </p>
         </div>
-        <a href="#"
+        <a href="/Html/Odd profile.html?id=1"
            class="w-100 fw-bold text-center fs-5 rounded-bottom-3"
            style="color:#CC0033; border:1px solid #CC0033; text-decoration:none;">
           View Profile <span class="ms-1">&rsaquo;</span>
@@ -176,7 +138,7 @@
             Role: Donor
           </p>
         </div>
-        <a href="#"
+        <a href="/Html/Odd profile.html?id=2"
            class="w-100 fw-bold text-center fs-5 rounded-bottom-3"
            style="color:#CC0033; border:1px solid #CC0033; text-decoration:none;">
           View Profile <span class="ms-1">&rsaquo;</span>
@@ -197,7 +159,7 @@
             Role: Donor
           </p>
         </div>
-        <a href="#"
+        <a href="/Html/Odd profile.html?id=3"
            class="w-100 fw-bold text-center fs-5 rounded-bottom-3"
            style="color:#CC0033; border:1px solid #CC0033; text-decoration:none;">
           View Profile <span class="ms-1">&rsaquo;</span>
@@ -218,7 +180,7 @@
             Role: Donor
           </p>
         </div>
-        <a href="#"
+        <a href="/Html/Odd profile.html?id=4"
            class="w-100 fw-bold text-center fs-5 rounded-bottom-3"
            style="color:#CC0033; border:1px solid #CC0033; text-decoration:none;">
           View Profile <span class="ms-1">&rsaquo;</span>
@@ -405,6 +367,11 @@
     </div>
 
   </div>
+  <div class="d-flex justify-content-end">
+  <a href="/Html/post2.html" class="btn1 fw-bold rounded-3 border-0 p-2 px-3 text-decoration-none mt-3">
+    View Recipients <span class="ms-1">&rsaquo;</span>
+  </a>
+</div>
 </div>
 <script defer src="/JAVA SCRIPT/bootstrap.bundle.min.js"></script>
 </body>

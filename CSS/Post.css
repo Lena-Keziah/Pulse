@@ -25,3 +25,6 @@ h2{
 img{
     object-fit: cover;
 }
+
+.btn1 {
+ background-color: #003366; color: white; }
