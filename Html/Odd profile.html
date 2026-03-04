@@ -126,7 +126,7 @@
         <div class="card-body p-4 ">
           <div class="row g-4 align-items-center">
             <div class="col-md-4 text-center">
-              <img src="/Assets/portrait-young-woman-smiling-isolated.jpg"
+              <img src="/Assets/casual-woman-white-jacket-chic-smart.jpg"
                    class="rounded-circle mb-3"
                    style="width:180px; height:180px; object-fit:cover;" 
                    alt="Donor">
@@ -208,31 +208,6 @@
 
   <script src="/JAVA SCRIPT/bootstrap.bundle.min.js" defer></script>
 
-  <script>
-    (function(){
-      const params = new URLSearchParams(window.location.search);
-      const id = params.get('id') || params.get('profile') || null;
-      const profiles = document.querySelectorAll('[data-profile]');
-      if(!profiles.length) return;
-      if(id){
-        let matched = false;
-        profiles.forEach(p => {
-          if(p.getAttribute('data-profile') === id){
-            p.style.display = '';
-            matched = true;
-          } else {
-            p.style.display = 'none';
-          }
-        });
-        if(!matched){
-          // fallback to first profile
-          profiles.forEach((p,i)=> p.style.display = i===0 ? '' : 'none');
-        }
-      } else {
-        // default: show only first profile
-        profiles.forEach((p,i)=> p.style.display = i===0 ? '' : 'none');
-      }
-    })();
-  </script>
+
 </body>
 </html>
