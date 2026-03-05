@@ -53,10 +53,26 @@ document.addEventListener('DOMContentLoaded', () => {
     validatePulse(signupForm);
     validatePulse(loginForm);
 });
-function handleCredentialResponse(response) {
-    const responsePayload = decodeJwtResponse(response.credential);
-    console.log("Full Name: " + responsePayload.name);
-    console.log("Email: " + responsePayload.email);
-    alert(`Welcome to Pulse, ${responsePayload.given_name}!`);
-    window.location.href = "/Html/Post.html";
+function handlecredentialresponse(response) {
+    // This unpacks the Google JWT
+    const responsepayload = decodeJwtresponse(response.credential);
+
+    // These are the logs you are looking for
+    console.log('Full Name: ' + responsepayload.name);
+    console.log('Image URL: ' + responsepayload.picture);
+    console.log('Email: ' + responsepayload.email);
+
+    // Use backticks (`) for the alert and remove the "!" 
+    alert(`Welcome to pulse, ${responsepayload.given_name}`);
+    
+    window.location.href = "/Html/index.html";
+}
+function decodeJwtresponse(token) {
+    let base64Url = token.split('.')[1];
+    let base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+    let jsonPayload = decodeURIComponent(atob(base64).split('').map(function(c) {
+        return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+    }).join(''));
+
+    return JSON.parse(jsonPayload);
 }
