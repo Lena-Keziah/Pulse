@@ -43,17 +43,32 @@
 
       <!-- LEFT CARD (Profile) -->
       <div class="col-lg-4 col-md-5 col-sm-12">
-        <div class="card rounded-4 shadow-sm text-center h-100" style="border: none;">
-          <div class="card-body d-flex flex-column justify-content-center py-4">
-            <img src="/Assets/portrait-young-woman-smiling-isolated.jpg" 
-                 class="rounded-circle mx-auto mb-3" 
-                 style="width: 130px; height: 130px; object-fit: cover;" 
-                 alt="profile">
-            <h5 class="fw-bold mb-1">Grace Manyi</h5>
-            <p class="text-primary fw-semibold mb-0">Donating</p>
-          </div>
+    <div class="card rounded-4 shadow-sm text-center h-100" style="border: none;">
+        <div class="card-body d-flex flex-column align-items-center py-4">
+            
+            <div class="profile-image-container" style="position: relative; width: 130px; margin-bottom: 15px;">
+                <img id="profile-img" 
+                     src="/Assets/portrait-young-woman-smiling-isolated.jpg" 
+                     class="rounded-circle" 
+                     style="width: 130px; height: 130px; object-fit: cover;" 
+                     alt="profile">
+                
+                <div id="camera-icon" style="position: absolute; bottom: 5px; right: 5px; cursor: pointer; background: white; border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
+                    📸
+                </div>
+                <input type="file" id="file-input" style="display:none" accept="image/*">
+            </div>
+
+            <h5 class="fw-bold mb-1" style="display: flex; align-items: center; justify-content: center; gap: 8px;">
+                <span id="profile-name">Grace Manyi</span>
+                <span id="edit-name-icon" style="cursor: pointer; font-size: 0.9rem;">✏️</span>
+            </h5>
+            
+            <p id="profile-status" class="text-primary fw-semibold mb-0">Donating</p>
+            
         </div>
-      </div>
+    </div>
+</div>
 
       <!-- RIGHT CARD (Details) -->
       <div class="col-lg-7 col-md-7 col-sm-12">
@@ -131,7 +146,8 @@
 </div>
 
 
-<script defer src="/JAVA SCRIPT/bootstrap.bundle.min.js"></script>
+<script defer src="/javascript/bootstrap.bundle.min.js"></script>
+<script defer src="/javascript/evenprofile.js"></script>
 
 </body>
 </html>

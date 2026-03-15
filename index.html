@@ -82,10 +82,11 @@
         </div>
 
         <!-- Email & Password form -->
-        <form>
+        <form id="signup-form-initial">
           <input type="email" class="form-control mb-2" placeholder="Email" required>
           <input type="password" class="form-control mb-3" placeholder="Password" required>
-          <button type="submit" class="btn btn-primary w-100">Sign Up</button>
+          <button type="submit" class="btn btn-primary w-100 py-2 fw-bold" 
+        >Sign Up</button>
         </form>
 
         <!-- Login link -->
@@ -152,44 +153,183 @@
         </form>
 
         <!-- Forgot password link -->
-        <p class="small mt-3">Forgot your password? <a href="#">Reset</a></p>
+        <p class="small mt-3">Forgot your password? <a href="#" data-bs-toggle="modal" 
+          data-bs-target="#forgotPasswordModal">Reset</a></p>
         <p class="small mt-1">Don't have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</a></p>
 
       </div>
     </div>
   </div>
 </div>
+<div class="modal fade" id="joinNetworkModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-4 shadow-lg border-0 p-3">
+            <div class="modal-body">
+                <div class="text-center mb-4">
+                    <h5 class="fw-bold text-danger mb-1">Join the Lifesaving Network</h5>
+                    <p class="text-muted small">Fill out your information detailly</p>
+                </div>
 
+                <form id="join-network-form">
+                    <div class="mb-3 text-start">
+                        <label class="form-label small fw-bold mb-1">Full Name</label>
+                        <input type="text" class="form-control form-control-sm border-dark rounded-2" placeholder="Enter your full name">
+                    </div>
+
+                    <div class="mb-3 text-start">
+                        <label class="form-label small fw-bold mb-1">Location</label>
+                        <select class="form-select form-select-sm border-dark rounded-2">
+                            <option>Douala</option>
+                            <option>Yaoundé</option>
+                            <option>Buea</option>
+                            <option>Bamenda</option>
+                            <option>Ngoundere</option>
+                            <option>Maroua</option>
+                            <option>Garoua</option>
+                            <option>Ebolowa</option>
+                            <option>Bertoua</option>
+                            <option>Bafoussam</option>
+                                            </select>
+                    </div>
+         <div class="mb-3 text-start">
+                        <label class="form-label small fw-bold mb-1">Phone Number</label>
+                        <input type="tel" class="form-control form-control-sm border-dark rounded-2" placeholder="Enter your phone Number">
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-6 text-start">
+                            <label class="form-label small fw-bold mb-1">Blood Type</label>
+                            <select class="form-select form-select-sm border-dark rounded-2">
+                                <option>A+</option>
+                                <option>A-</option>
+                                <option>B+</option>
+                                <option>B-</option>
+                                <option>AB+</option>
+                                <option>AB-</option>
+                                <option>O+</option>
+                                <option>O-</option>
+                            </select>
+                        </div>
+                        <div class="col-6 text-center">
+                            <label class="form-label small fw-bold mb-1 d-block">Gender</label>
+                           <select class="form-select form-select-sm border-dark rounded-2">
+                                <option selected>Male</option>
+                                <option>Female</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-danger px-5 fw-bold" style="background-color: #CC0033; border: none;">
+                            Submit
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="forgotPasswordModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-4 shadow-lg border-0 p-4">
+            
+            <div class="modal-body text-center">
+                <div class="mb-3">
+                    <img src="/Assets/pulse_logo__2_-removebg-preview.png" alt="Pulse Logo" style="width: 100px;">
+                </div>
+                
+                <h5 class="fw-bold text-muted mb-4">Forgot your password?</h5>
+
+                <form id="forgot-password-form">
+                    <div class="text-start mb-3">
+                        <label class="form-label small fw-bold mb-1">Email</label>
+                        <input type="email" class="form-control border-secondary-subtle bg-light rounded-2 shadow-sm" placeholder="email@example.com">
+                    </div>
+
+                    <p class="text-muted mb-4" style="font-size: 0.65rem; line-height: 1.3;">
+                        We sent an email with your reset password instructions. If you can't see the message check your spam folder.
+                    </p>
+
+                    <div class="d-flex align-items-center mb-3">
+                        <hr class="flex-grow-1">
+                        <span class="mx-2 text-muted small">Or</span>
+                        <hr class="flex-grow-1">
+                    </div>
+
+                    <p class="small mb-4">
+                        Reset password with <a href="#" data-bs-toggle="modal" data-bs-target="#forgotPasswordModal2" class="text-primary text-decoration-none fw-bold">Phone Number</a>
+                    </p>
+
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal"class="text-muted small text-decoration-none d-block mb-2" data-bs-dismiss="modal">Go back to Login</a>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="forgotPasswordModal2" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-4 shadow-lg border-0 p-4">
+            
+            <div class="modal-body text-center">
+                <div class="mb-3">
+                    <img src="/Assets/pulse_logo__2_-removebg-preview.png" alt="Pulse Logo" style="width: 100px;">
+                </div>
+                
+                <h5 class="fw-bold text-muted mb-4">Forgot your password?</h5>
+
+                <form id="forgot-password-form">
+                    <div class="text-start mb-3">
+                        <label class="form-label small fw-bold mb-1">Email</label>
+                        <input type="email" class="form-control border-secondary-subtle bg-light rounded-2 shadow-sm" placeholder="email@example.com">
+                    </div>
+
+                    <p class="text-muted mb-4" style="font-size: 0.65rem; line-height: 1.3;">
+                        We sent an email with your reset password instructions. If you can't see the message check your spam folder.
+                    </p>
+
+                    <div class="d-flex align-items-center mb-3">
+                        <hr class="flex-grow-1">
+                        <span class="mx-2 text-muted small">Or</span>
+                        <hr class="flex-grow-1">
+                    </div>
+
+                    <p class="small mb-4">
+                        Reset password with <a href="#" data-bs-toggle="modal" data-bs-target="#forgotPasswordModal" class="text-primary text-decoration-none fw-bold">Email</a>
+                    </p>
+
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal"class="text-muted small text-decoration-none d-block mb-2" data-bs-dismiss="modal">Go back to Login</a>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+</div>
 <div class="container-fluid hero-section py-5 rounded-4 mb-2">
   <div class="row align-items-center gx-3">
     
     <div class="col-lg-6 col-md-6 col-sm-12 hero-text text-center text-lg-start px-3">
-      <h2 class="text-white fs-1 mb-2 fw-bold ms-5">Welcome To Pulse</h2>
-      <p class="text-white fw-light fs-5 mb-2 ms-5">
-        Your Real-Time Window to Lifesaving Blood Donation,<br>
-        Events, and Advancements. Stay Informed on Every<br>
+      <h2 class="text-white fs-1 mb-2 fw-bold ms-lg-5">Welcome To Pulse</h2>
+      <p class="text-white fw-light fs-5 mb-2 ms-lg-5">
+        Your Real-Time Window to Lifesaving Blood Donation,<br class="d-none d-lg-block">
+        Events, and Advancements. Stay Informed on Every<br class="d-none d-lg-block">
         Donation, Impact, and Medical Breakthrough.
       </p>
-      <div class="buttons mt-4 d-flex gap-3 justify-content-center justify-content-lg-start">
-       <a href="/Html/post2.html" class="btn1 fw-bold rounded-3 border-0 p-2 px-3 ms-5 text-decoration-none">Make a request</a>
-
-        <a href="/Html/Post.html" class="btn2 fw-bold rounded-3 border-0 p-2 px-3 ">Donate Now</a>
+      
+      <div class="buttons mt-4 d-flex gap-3 justify-content-center justify-content-lg-start ms-lg-5">
+        <a href="/Html/post2.html" class="btn1 fw-bold rounded-3 border-0 p-2 px-3 text-decoration-none">Make a request</a>
+        <a href="/Html/Post.html#donate" class="btn2 fw-bold rounded-3 border-0 p-2 px-3">Donate Now</a>
       </div>
     </div>
     
-    <div class="col-lg-6 col-md-6 col-sm-12 hero-image text-center px-3">
+    <div class="col-lg-6 col-md-6 col-sm-12 hero-image text-center px-3 mt-4 mt-lg-0">
       <img src="/Assets/xco2_8jtl_220606-removebg-preview.png" 
            alt="Donation image" 
            class="img-fluid" 
-           style="max-width: 70%; height: auto; margin: 0 auto;">
+           style="max-width: 80%; height: auto; margin: 0 auto;">
     </div>
 
   </div>
 </div>
-<p class="text-start ms-3 fw-bold fs-4" style="color:#003366;">Recent Donors</p>
-<div class="container-fluid card-section py-2">
-  <div class="row g-4">
-
     <!-- Card 1 -->
     <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
       <div class="card rounded-3 h-100" style="border-color:#CC0033; width: 100%; max-width: 20rem;">
@@ -285,7 +425,7 @@
   </div>
   
   <div class="d-flex justify-content-end mt-3">
-    <a href="#"class="button rounded-3 border-0 p-2 px-3 text-white">See More<span class="ms-1">&rsaquo;</span></a>
+    <a href="/Html/Post.html"class="button rounded-3 border-0 p-2 px-3 text-white">See More<span class="ms-1">&rsaquo;</span></a>
   </div>
 </div>
 <p class="text-start ms-3 fw-bold fs-4" style="color:#003366;">Recent Recipients</p>
@@ -402,12 +542,11 @@
             style="background-color:#003366;">
       See More <span class="ms-1">&rsaquo;</span>
     </button>
-  -->
+  --> <div class="d-flex justify-content-end mt-3">
+    <a href="/Html/post2.html"class="button rounded-3 border-0 p-2 px-3 text-white">See More<span class="ms-1">&rsaquo;</span></a>
+  </div>
    
-    <button class="btn fw-bold rounded-3 border-0 p-2 px-3 text-white" 
-            style="background-color:#003366;">
-      See More <span class="ms-1">&rsaquo;</span>
-    </button>
+  
   </div>
  <p class="text-start ms-3 fw-bold fs-4" style="color:#003366;">How do we operate?</p>
 <div class="container my-5">
@@ -474,12 +613,11 @@
   <p class="fs-5 ms-3">Are you eligible for blood donation? Find out about the eligibility
 requirements to donate blood today. Learn about general health,
 travel, medications, tattoos, and more.</p>
-<div class="d-flex justify-content-end mt-3 mb-3 pe-5">
-  <button class="btn 3 fw-bold rounded-3 border-0 p-2 px-3 text-white" style="background-color:#CC0033;"font-family="'Times New Roman', Times, serif;">
-    Learn more about eligibility
-  </button>
-</div>
 
+ <div class="d-flex justify-content-end mt-3 mb-3 pe-5">
+    <a href="/Html/Blog.html"class="btn 3 fw-bold rounded-3 border-0 p-2 px-3 text-white" 
+    style="background-color:#CC0033;"font-family="'Times New Roman', Times, serif;">Learn more about eligibility</a>
+  </div>
 </body>
 <footer style="background-color: #CC0033;">
   <div class="container d-flex justify-content-between flex-wrap" style="padding-top: 15px; padding-bottom: 0;">

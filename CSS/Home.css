@@ -24,6 +24,11 @@
   object-fit:cover;
   margin-left: 20px;
 }
+.btn1:hover,.btn2:hover{
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
 .btn3{
   background-color:#003366;
 }
@@ -50,4 +55,10 @@ p{
 }
 a{
   text-decoration: none;
+}
+.card:hover{
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
 }

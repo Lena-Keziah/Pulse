@@ -71,7 +71,74 @@
       </select>
     </div>
   </div>
+</div>
 
+<div class="modal fade" id="donateModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-4 shadow border-0">
+            <div class="modal-header border-0 pb-0">
+                <button type="button" class="btn-close border border-danger rounded-circle p-2" data-bs-dismiss="modal" aria-label="Close" style="font-size: 0.6rem; color: red;"></button>
+            </div>
+            
+            <div class="modal-body px-4">
+                <form id="donateForm">
+                    <div class="row mb-3 align-items-center">
+                        <label class="col-4 fw-bold">Name:</label>
+                        <div class="col-8">
+                            <input type="text" class="form-control border-secondary-subtle bg-light shadow-sm">
+                        </div>
+                    </div>
+
+                    <div class="row mb-3 align-items-center">
+                        <label class="col-4 fw-bold">Blood type:</label>
+                        <div class="col-8">
+                            <select class="form-select border-secondary-subtle bg-light shadow-sm">
+                                <option selected disabled>Select Type</option>
+                                <option value="A+">A+</option>
+                                <option value="O+">O+</option>
+                                <option value="B+">B+</option>
+                                <option value="AB+">AB+</option>
+                                <option value="A-">A-</option>
+                                <option value="O-">O-</option>
+                                <option value="B-">B-</option>
+                                <option value="AB-">AB-</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3 align-items-center">
+                        <label class="col-4 fw-bold">Location:</label>
+                        <div class="col-8">
+                            <select class="form-select border-secondary-subtle bg-light shadow-sm">
+                                <option selected disabled>Select City</option>
+                                <option value="Buea">Buea</option>
+                                <option value="Limbe">Limbe</option>
+                                <option value="Douala">Douala</option>
+                                <option value="Yaoundé">Yaoundé</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row mb-4 align-items-center">
+                        <label class="col-4 fw-bold">Role:</label>
+                        <div class="col-8">
+                            <select class="form-select border-secondary-subtle bg-light shadow-sm">
+                                <option value="donor">Donor</option>
+                                <option value="recipient">Recipient</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="text-center mb-3">
+                        <button type="submit" class="btn btn-danger px-5 py-2 fw-bold shadow-sm" style="background-color: #CC0033; border: none;">
+                            Donate
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
   <!-- Blood type select -->
   <div class="mb-3" style="width: 250px;">
     <label class="form-label">Blood Type</label>
@@ -104,7 +171,7 @@
 
 </div>
 <div class="container-fluid card-section py-2 px-3 rounded-top-3">
-  <div class="row g-4"> <!-- g-4 adds equal spacing between columns -->
+  <div class="row g-4" id="posts-grid"> <!-- g-4 adds equal spacing between columns -->
 
     <!-- Card 1 -->
     <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
@@ -370,11 +437,11 @@
 
   </div>
   <div class="d-flex justify-content-end">
-  <a href="/Html/Post.html" class="btn1 fw-bold rounded-3 border-0 p-2 px-3 text-decoration-none mt-3">
+  <a href="/Html/post2.html" class="btn1 fw-bold rounded-3 border-0 p-2 px-3 text-decoration-none mt-3">
     View Recipients <span class="ms-1">&rsaquo;</span>
   </a>
 </div>
 </div>
-<script defer src="/JAVA SCRIPT/bootstrap.bundle.min.js"></script>
+<script  src="/javascript/bootstrap.bundle.min.js"></script>
 </body>
 </html>

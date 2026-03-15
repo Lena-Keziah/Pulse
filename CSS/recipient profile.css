@@ -6,9 +6,7 @@
     text-decoration: underline;
     text-underline-offset: 10px;
 }
-h2{
-    color: #003366;
-}
+
 .navbar-collapse.collapsing,
 .navbar-collapse.show {
     position: absolute;
@@ -19,18 +17,15 @@ h2{
     z-index: 1000;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
-.card-section{
+body{
     background-color: #CC0033;
 }
-img{
-    object-fit: cover;
-}
-
-.btn1 {
- background-color: #003366; color: white; }
- .card:hover{
-  transform: scale(1.03);
-  transition: transform 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-
+.card{
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    max-height: auto;
+    margin-top: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
 }

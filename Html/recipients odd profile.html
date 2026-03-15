@@ -1,0 +1,109 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="/Css/bootstrap.min.css">
+  <link rel="stylesheet" href="/Css/recipient profile.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="/Assets/pulse_logo__2_-removebg-preview.png" 
+             alt="Pulse Logo" class="img-fluid" style="max-width:80px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-link">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbar-link">
+        <ul class="navbar-nav gap-4 ms-auto mb-2 mb-lg-0 ps-5">
+          <li class="nav-item fw-bold"><a class="nav-link" href="/index.html">Home</a></li>
+          <li class="nav-item fw-bold"><a class="nav-link" href="/Html/Post.html">Posts</a></li>
+          <li class="nav-item fw-bold"><a class="nav-link" href="/Html/Blog.html">Blogs</a></li>
+          <li class="nav-item fw-bold"><a class="nav-link active" href="/Html/Even profile.html">Profile</a></li>
+          <li class="nav-item fw-bold"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<div class="card rounded-4 shadow-sm p-4 bg-white border-0">
+    <div class="row g-4">
+        
+        <div class="col-lg-8 col-md-12">
+            <div class="position-relative overflow-hidden rounded-4" style="height: 400px;">
+                <img id="profile-img" src="/Assets/sick man.jpg" 
+                     class="w-100 h-100" 
+                     style="object-fit: cover;" 
+                     alt="Recipient Photo">
+                
+                <div id="camera-icon" class="position-absolute bottom-0 end-0 m-3 bg-white p-2 rounded-circle shadow-sm" style="cursor: pointer; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">
+                    📸
+                </div>
+            </div>
+
+          
+        </div>
+
+        <div class="col-lg-4 col-md-12">
+            <div class="table-responsive">
+                <table class="table table-sm align-middle">
+                    <tbody>
+                        <tr>
+                            <td class="text-muted py-2 small">Name:</td>
+                            <td id="profile-name" class="fw-bold text-end py-2">Ngwa Paul</td>
+                        </tr>
+                        <tr>
+                            <td class="text-muted py-2 small">Location:</td>
+                            <td id="profile-location" class="text-end py-2">Buea, Cameroon</td>
+                        </tr>
+                        <tr>
+                            <td class="text-muted py-2 small">Blood Group:</td>
+                            <td id="profile-blood" class="fw-bold text-danger text-end py-2">O-</td>
+                        </tr>
+                        <tr>
+                            <td class="text-muted py-2 small">Sex:</td>
+                            <td id="profile-sex" class="text-end py-2">male</td>
+                        </tr>
+                        <tr>
+                            <td class="text-muted py-2 small">Age:</td>
+                            <td id="profile-age" class="text-end py-2">43</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+       <div class="d-flex text-center border-top border-bottom mt-3">
+                <div class="flex-fill py-2 border-end" style="color:#003366">
+                  <i class="fa fa-phone me-1"></i> Call
+                </div>
+                <div class="flex-fill py-2" style="color:#003366">
+                  <i class="fa fa-comment me-1"></i> Chat
+                </div>
+              </div>
+
+        
+          
+            <div class="mt-4">
+                <p class="mb-1 x-small fw-semibold text-dark">Requests Made: <span id="request-count">3</span></p>
+                <p class="mb-3 x-small fw-semibold text-dark">Donating history: <span id="donate-count">0</span></p>
+                
+                <button class="btn btn-danger btn-sm px-3 rounded-2 shadow-sm" style="background-color: #CC0033; border: none;">
+                    Requesting
+                </button>
+            </div>
+        </div>
+
+    </div>
+      <div class="mt-4">
+                <h6 class="fw-bold text-dark">Description</h6>
+                <p id="profile-description" class="text-muted small">
+                    I am scheduled for emergency surgery next week and need O- blood due to complications from a recent accident. The local supply is low, and your help could be life-saving. Every donation counts.
+                </p>
+            </div>
+</div>
+    
+</body>
+</html>
