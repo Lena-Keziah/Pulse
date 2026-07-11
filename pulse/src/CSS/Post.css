@@ -1,0 +1,36 @@
+.nav-link{
+    color:#CC0033;
+}
+.nav-item .nav-link.active {
+    color:#003366;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+h2{
+    color: #003366;
+}
+.navbar-collapse.collapsing,
+.navbar-collapse.show {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: white;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.card-section{
+    background-color: #CC0033;
+}
+img{
+    object-fit: cover;
+}
+
+.btn1 {
+ background-color: #003366; color: white; }
+ .card:hover{
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+}
