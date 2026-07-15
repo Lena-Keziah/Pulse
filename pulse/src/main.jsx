@@ -7,7 +7,7 @@ import Blog from './Blog.jsx'
 import Profile from './Evenprofile.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
-import './Css/Home.css'
+import './Home.css'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 
 // FIXED: Using createRoot directly since it's imported above, and changed React.StrictMode to StrictMode
