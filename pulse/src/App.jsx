@@ -42,8 +42,8 @@ function App() {
               <li className="nav-item">
                 <Link className="nav-link active fw-bold" aria-current="page" to="/">Home</Link>
               </li>
-              <li className="nav-item">
-                <a className="nav-link fw-bold" href="/posts">Posts</a>
+               <li className="nav-item">
+                <Link className="nav-link fw-bold" to="/posts">Posts</Link>
               </li>
               <li className="nav-item">
                 <a className="nav-link fw-bold" href="/blog">Blogs</a>

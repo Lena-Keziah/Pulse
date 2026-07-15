@@ -18,7 +18,6 @@ createRoot(document.getElementById('root')).render(
         {/* This sets App.jsx as the homepage (/) */}
         <Route path="/" element={<App />} />
         
-        {/* This sets Post.jsx to load when you go to /posts */}
         <Route path="/posts" element={<Post />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/evenprofile" element={<Profile />} />

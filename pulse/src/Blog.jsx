@@ -49,7 +49,7 @@ function App() {
                 <Link className="nav-link active fw-bold" to="/blog">Blogs</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link fw-bold" to="/oddprofile">Profile</Link>
+                <Link className="nav-link fw-bold" to="/evenprofile">Profile</Link>
               </li>
               <li className="nav-item">
                 <a className="nav-link fw-bold" href="#" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</a>
